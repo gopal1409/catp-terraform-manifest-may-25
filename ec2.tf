@@ -19,8 +19,9 @@ data "aws_ami" "hrms" {
 resource "aws_instance" "web" {
   ami           = data.aws_ami.hrms.id #this is the combination of data block+amiid
   instance_type = "t3.micro"
-
+  user_data = file("${path.module}/app/app.sh") #path module looking for sh file in the current directory
+  #user_data = C:\Users\gopal\OneDrive\Desktop\terraform-manifest
   tags = {
-    Name = "Gopal Instance"
+    Name = "Gopal Instance" 
   }
 }
