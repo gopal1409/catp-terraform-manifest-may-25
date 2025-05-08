@@ -1,5 +1,5 @@
 #i want to create an ec2 instance using terraform
-data "aws_ami" "hrms" {
+/*data "aws_ami" "hrms" {
   most_recent = true #look for the recent version of the os
 
   filter {
@@ -26,3 +26,4 @@ resource "aws_instance" "web" {
     Name = "Gopal Instance" 
   }
 }
+*/

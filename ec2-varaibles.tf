@@ -1,4 +1,4 @@
-#input variables
+/*#input variables
 variable "aws_region" {
   description = "value of the aws region"
   type = string
@@ -14,4 +14,4 @@ variable "instance_keypair"{
     description = "value of the instance keypair"
     type = string
     default = "terraform"  
-}
+}*/

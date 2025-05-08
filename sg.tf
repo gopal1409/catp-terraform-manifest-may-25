@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_ssh" {
+/*resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh_gopal" #add your name here
   description = "Allow ssh inbound traffic"
   
@@ -46,4 +46,4 @@ resource "aws_security_group" "allow_http" {
   tags = {
     Name = "allow_http_gopal"
   }
-}
+}*/
