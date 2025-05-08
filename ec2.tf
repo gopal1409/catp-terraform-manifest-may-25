@@ -18,9 +18,10 @@ data "aws_ami" "hrms" {
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.hrms.id #this is the combination of data block+amiid
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
   user_data = file("${path.module}/app/app.sh") #path module looking for sh file in the current directory
-  #user_data = C:\Users\gopal\OneDrive\Desktop\terraform-manifest
+  key_name = var.instance_keypair
+  vpc_security_group_ids = [ aws_security_group.allow_http.id, aws_security_group.allow_ssh.id ] #this is the combination of security group id
   tags = {
     Name = "Gopal Instance" 
   }
