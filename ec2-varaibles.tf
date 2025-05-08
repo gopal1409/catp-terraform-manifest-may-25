@@ -15,4 +15,4 @@ variable "instance_keypair"{
     description = "value of the instance keypair"
     type = string
     default = "terraform"  
-}/*
+}*/
