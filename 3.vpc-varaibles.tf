@@ -7,13 +7,13 @@ variable "vpc_name" {
 
 variable "vpc_cidr" {
   description = "cidr block of the vpc"
-  type        = string
-  default     = "10.0.0/16"
+  type        = list(string)
+  default     = ["10.0.0/16"]
   }
 variable "vpc_app_subnet_cidr" {
   description = "cidr block of the public subnet"
-  type        = string
-  default     = "10.0.1.0/24"
+  type        = list(string)
+  default     = ["10.0.1.0/24"]
   
 }
 
