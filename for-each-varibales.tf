@@ -1,4 +1,4 @@
-variable "instance"{
+/*variable "instance"{
     description = "map of instance configruation "
     type = map(object({
         ami = string
@@ -15,4 +15,4 @@ variable "instance"{
             instance_type = "t2.small"
         }
     }
-}
+}*/

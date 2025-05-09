@@ -1,10 +1,10 @@
 #input variables
-variable "aws_region" {
+/*variable "aws_region" {
   description = "value of the aws region"
   type = string
     default = "us-east-1"
 }
-/*
+
 variable "instance_type"{
     description = "value of the instance type"
     type = string

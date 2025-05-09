@@ -1,4 +1,4 @@
-resource "aws_instance" "servers" {
+/*resource "aws_instance" "servers" {
   for_each = var.instance
   ami = each.value.ami
   instance_type = each.value.instance_type
@@ -6,3 +6,4 @@ resource "aws_instance" "servers" {
     Name= "env0-gopal-${each.key}"
   }
 }
+*/
