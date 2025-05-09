@@ -1,6 +1,6 @@
 variable "vpc_name" {
   description = "name of the vpc"
-  type        = string
+  type        = list(string)
   default     = "gopal-vpc"
   
 }
@@ -19,7 +19,7 @@ variable "vpc_app_subnet_cidr" {
 
 variable "vpc_db_subnet_cidr" {
   description = "cidr block of the private subnet"
-  type        = string
-  default     = "10.0.2.0/24"
+  type        = list(string)
+  default     = ["10.0.2.0/24"]
   
 }
