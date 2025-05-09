@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "name of the vpc"
   type        = list(string)
-  default     = "gopal-vpc"
+  default     = ["gopal-vpc"]
   
 }
 
