@@ -1,5 +1,2 @@
 .terraform
 .terraform.lock.hcl
-ec2.tf 
-sg.tf 
-ec2-variables.tf

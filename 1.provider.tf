@@ -7,6 +7,13 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket         = "gopal14099" #replace with your bucket name
+    key            = "prod/prod.tfstate"
+    region         = "us-east-1"
+    use_lockfile = true
+    
+  }
 }
 
 # Configure the AWS Provider
