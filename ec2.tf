@@ -23,6 +23,6 @@ resource "aws_instance" "web" {
   key_name = var.instance_keypair #this is the key pair name
   #vpc_security_group_ids = [ aws_security_group.allow_http.id, aws_security_group.allow_ssh.id ] #this is the combination of security group id
   tags = {
-    Name = "Gopal Instance" 
+    Name = format("%s-%s", var.instance_tag, terraform.workspace)
   }
 }

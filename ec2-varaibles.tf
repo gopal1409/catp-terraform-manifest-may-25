@@ -16,3 +16,9 @@ variable "instance_keypair"{
     type = string
     default = "terraform"  
 }
+
+variable "instance_tag"{
+    description = "value of the instance keypair"
+    type = string
+    default = "gopal-ec2"  
+}
