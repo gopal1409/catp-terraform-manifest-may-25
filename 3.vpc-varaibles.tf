@@ -1,4 +1,4 @@
-variable "vpc_name" {
+/*variable "vpc_name" {
   description = "name of the vpc"
   type        = list(string)
   default     = ["gopal-vpc"]
@@ -22,4 +22,4 @@ variable "vpc_db_subnet_cidr" {
   type        = list(string)
   default     = ["10.0.2.0/24"]
   
-}
+}*/
